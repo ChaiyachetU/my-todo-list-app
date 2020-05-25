@@ -1,0 +1,30 @@
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    max-width: 768px;
+}
+
+.list-group-item {
+    padding-right: 0px;
+}
+
+/* Reset margin for item text */
+ul h5 {
+    margin: 0;
+}
+
+/* Disable for click event */
+.fa-check, .fa-trash-alt {
+  pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.todo {
+    transition: all 1s ease;
+}

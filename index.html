@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a·ดัม Todo App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,700;1,300;1,400&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+    <!-- Start Content -->
+    <div class="container">
+
+        <!-- Start Todo Header -->
+        <div id="header-container">
+
+            <!-- Start Text Header -->
+            <div class="text-center pt-5 pb-4">
+                <h1>a·ดัม<br>Todo List</h1>
+            </div>
+            <!-- End Text Header -->
+
+            <!-- Start Todo Add Item Section -->
+            <div id="todo-input-container" class="pb-5">
+                <form>
+                    <div class="input-group input-group-lg">
+                        <input id="todo-input" type="text" class="form-control form-control-lg"
+                            placeholder="Add New Task ...">
+                        <span class="input-group-append">
+                            <button id="todo-button" type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <!-- End Todo Add Item Section -->
+
+        </div>
+        <!-- End Todo Header -->
+
+        <!-- Start Todo List Section -->
+        <div id="todo-lists-container" class="mb-4">
+            <ul id="todo-lists" class="list-group list-group-flush">
+                <!-- Add Todo List By app.js -->
+            </ul>
+        </div>
+        <!-- End Todo List Section -->
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Javascript -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
